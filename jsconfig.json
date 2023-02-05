@@ -7,7 +7,7 @@
     "target": "es2020",
     "baseUrl": "src"
   },
-  "include": ["src"],
+  "include": ["src", "vite.config.js"],
   "exclude": [
     "dist",
     "node_modules",
