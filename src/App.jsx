@@ -1,10 +1,6 @@
-import { useState } from 'react'
-import PostsList from './pages/PostsList'
+import { PostsList } from 'pages'
 
-function App() {
-  const [count, setCount] = useState(0)
-
-
+const App = () => {
   return <PostsList />
 }
 
