@@ -1,7 +1,5 @@
 import { PostsList } from 'pages'
 
-const App = () => {
-  return <PostsList />
-}
+const App = () => <PostsList />
 
 export default App
