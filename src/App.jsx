@@ -1,4 +1,4 @@
-import { PostsList } from 'pages'
+import PostsList from './pages/PostsList'
 
 const App = () => <PostsList />
 

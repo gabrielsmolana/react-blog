@@ -1,3 +1,1 @@
-import PostsList from './PostsList'
-
-export { PostsList }
+export { default } from './PostDetails'

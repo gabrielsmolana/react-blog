@@ -5,8 +5,8 @@ const PostsList = () => {
   const [posts, setPosts] = useState([])
   const [loading, setLoading] = useState(false)
 
-  useEffect(() => console.log({ posts }), [posts])
-  useEffect(() => console.log({ loading }), [loading])
+  // useEffect(() => console.log({ posts }), [posts])
+  // useEffect(() => console.log({ loading }), [loading])
 
   useEffect(() => {
     setLoading(true)
@@ -19,10 +19,17 @@ const PostsList = () => {
   }, [])
 
   return (
-    <>
-      {loading ? <Spin /> : <h1>Elo</h1>}
-      {/* {!loading && <h1>Elo</h1>} */}
-    </>
+    <div>
+      {loading ? (
+        <Spin />
+      ) : (
+        <div>
+          {posts.map(({ id, title }) => (
+            <div key={id}>{title}</div>
+          ))}
+        </div>
+      )}
+    </div>
   )
 }
 
